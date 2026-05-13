@@ -1,63 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Archive: Video Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<head>
-<link rel="stylesheet" href="styles.css">
-</head>
-
 <body>
 
-    <!-- Main Content: Login -->
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <p class="hero-eyebrow">// initializing archive v1.0</p>
+    <h1 class="hero-title">THE ARCHIVE:<br><span>VIDEO GAMES</span></h1>
+    <p class="hero-subtitle">&gt; DIVE INTO THE HISTORY OF VIDEO GAMES<span class="blink">_</span></p>
+    <p class="hero-desc">From blinking pixels on a cathode ray tube to sprawling open worlds — this archive traces every leap, revolution, and unlikely moment that shaped the medium we love.</p>
+    <a href="#timeline" class="hero-cta">EXPLORE THE ARCHIVE</a>
+  </section>
 
-    <section>
-    <h2>Join for Updates!<p style="font: size 11px;px">&#128522;</p></h2>
+  <div class="pixel-divider"></div>
 
-    <form>
-    <label for="name"> Your Name : </label>
-    <input type="text" placeholder="Enter Your Name">
+  <!-- PURPOSE -->
+  <section class="purpose-section">
+    <div class="container">
+      <div class="purpose-layout">
+        <div>
+          <p class="section-label">// purpose</p>
+          <h2 class="section-title">WHY THIS<br>EXISTS</h2>
+          <p class="section-body">This is a personal project built out of a deep love for gaming and its history. The goal is to showcase video games and explore how each era — from the arcades of the 70s to the modern era — changed how we play, think, and connect.</p>
+          <p class="section-body" style="margin-top:1rem;">Video games aren't just entertainment. They're culture, art, and technology colliding in real time.</p>
+        </div>
+        <div class="purpose-visual">
+          <div class="controller-art">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <!-- Controller body -->
+              <rect x="20" y="70" width="160" height="80" rx="40" fill="#1a0035" stroke="#bb1f91" stroke-width="2"/>
+              <!-- Left grip -->
+              <rect x="20" y="110" width="50" height="50" rx="20" fill="#1a0035" stroke="#bb1f91" stroke-width="2"/>
+              <!-- Right grip -->
+              <rect x="130" y="110" width="50" height="50" rx="20" fill="#1a0035" stroke="#bb1f91" stroke-width="2"/>
+              <!-- D-Pad -->
+              <rect x="45" y="88" width="10" height="30" rx="2" fill="#bb1f91"/>
+              <rect x="38" y="95" width="24" height="10" rx="2" fill="#bb1f91"/>
+              <!-- Buttons -->
+              <circle cx="138" cy="93" r="6" fill="#ff2dca" opacity="0.9"/>
+              <circle cx="152" cy="85" r="6" fill="#00ffe0" opacity="0.9"/>
+              <circle cx="152" cy="101" r="6" fill="#ffe600" opacity="0.9"/>
+              <circle cx="166" cy="93" r="6" fill="#ff6b6b" opacity="0.9"/>
+              <!-- Center buttons -->
+              <rect x="88" y="97" width="10" height="6" rx="3" fill="#7a1260"/>
+              <rect x="103" y="97" width="10" height="6" rx="3" fill="#7a1260"/>
+              <!-- Analog sticks -->
+              <circle cx="70" cy="118" r="8" fill="#2a0050" stroke="#bb1f91" stroke-width="1.5"/>
+              <circle cx="70" cy="118" r="3" fill="#bb1f91"/>
+              <circle cx="130" cy="118" r="8" fill="#2a0050" stroke="#bb1f91" stroke-width="1.5"/>
+              <circle cx="130" cy="118" r="3" fill="#bb1f91"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <label for="email"> Your Email : </label>
-    <input type="email" placeholder="Enter Your Email"> 
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="timeline">
+    <div class="container">
+      <p class="section-label">// key moments</p>
+      <h2 class="section-title">GAMING THROUGH<br>THE DECADES</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-year">1972</p>
+          <p class="timeline-event">The Arcade Era Begins</p>
+          <p class="timeline-detail">Pong launches and ignites a global obsession with interactive entertainment.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">1977</p>
+          <p class="timeline-event">Home Consoles Arrive</p>
+          <p class="timeline-detail">The Atari 2600 brings the arcade into living rooms across America.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">1985</p>
+          <p class="timeline-event">Nintendo Saves the Industry</p>
+          <p class="timeline-detail">After the crash of 1983, the NES revives gaming and introduces Super Mario Bros.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">1996</p>
+          <p class="timeline-event">The 3D Revolution</p>
+          <p class="timeline-detail">Super Mario 64 and the PlayStation define how we think about 3D space and storytelling.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">2000s–Now</p>
+          <p class="timeline-event">Online & Beyond</p>
+          <p class="timeline-detail">Multiplayer goes global. Indie games rise. Mobile changes everything. Again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <button type="submit">Send</button>
-    </form>
-</section>
+  <!-- SIGNUP -->
+  <section class="signup-section">
+    <div class="container" style="text-align:center;">
+      <p class="section-label" style="justify-content:center; display:block;">// stay in the loop</p>
+      <h2 class="section-title" style="display:inline-block;">JOIN FOR UPDATES &#128522;</h2>
+      <p class="section-body" style="margin:1rem auto 0; text-align:center;">Drop your name and email to get notified when new game histories, deep dives, and content drop.</p>
+      <div class="signup-card">
+        <div class="signup-row">
+          <label for="name">YOUR NAME</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="signup-row">
+          <label for="email">YOUR EMAIL</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <button class="signup-btn" onclick="handleSignup()">INSERT COIN TO CONTINUE</button>
+      </div>
+    </div>
+  </section>
 
-    <!--Gaming Header-->
+  <!-- EARLY 2000s GAMES -->
+  <section class="games-section">
+    <div class="container">
+      <p class="section-label">// the golden era</p>
+      <h2 class="section-title">ICONIC GAMES OF THE<br>EARLY 2000s</h2>
+      <p class="section-body" style="margin-bottom:3rem;">The early 2000s were a turning point — 3D gaming matured, online play exploded, and franchises were born that still dominate today. Here are some of the titles that defined the decade.</p>
 
-<section>
-    <header>
-        <h1> THE ARCHIVE: VIDEO GAMES</h1>
-        <h2> Dive Into the History of Video Games </h2>
-    <header>
-        </section>
+      <!-- ACTION / ADVENTURE -->
+      <div class="genre-group">
+        <p class="genre-label">Action / Adventure</p>
+        <div class="games-grid">
+          <div class="game-card">
+            <p class="game-year">NOV 2001</p>
+            <p class="game-title">Halo: Combat Evolved</p>
+            <p class="game-platform">Xbox</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">OCT 2001</p>
+            <p class="game-title">Grand Theft Auto III</p>
+            <p class="game-platform">PlayStation 2</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">NOV 2002</p>
+            <p class="game-title">Grand Theft Auto: Vice City</p>
+            <p class="game-platform">PlayStation 2</p>
+            <span class="game-badge">Fan Favorite</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">MAR 2003</p>
+            <p class="game-title">The Legend of Zelda: The Wind Waker</p>
+            <p class="game-platform">GameCube</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">MAY 2003</p>
+            <p class="game-title">Prince of Persia: Sands of Time</p>
+            <p class="game-platform">Multi-platform</p>
+            <span class="game-badge">Classic</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">SEP 2004</p>
+            <p class="game-title">Grand Theft Auto: San Andreas</p>
+            <p class="game-platform">PlayStation 2</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+        </div>
+      </div>
 
-    <!--The Purpose-->
+      <!-- RPG -->
+      <div class="genre-group">
+        <p class="genre-label">Role-Playing Games</p>
+        <div class="games-grid">
+          <div class="game-card">
+            <p class="game-year">NOV 2004</p>
+            <p class="game-title">World of Warcraft</p>
+            <p class="game-platform">PC</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">JUL 2001</p>
+            <p class="game-title">Final Fantasy X</p>
+            <p class="game-platform">PlayStation 2</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">OCT 2003</p>
+            <p class="game-title">Star Wars: Knights of the Old Republic</p>
+            <p class="game-platform">Xbox / PC</p>
+            <span class="game-badge">Fan Favorite</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">NOV 2002</p>
+            <p class="game-title">Kingdom Hearts</p>
+            <p class="game-platform">PlayStation 2</p>
+            <span class="game-badge">Classic</span>
+          </div>
+        </div>
+      </div>
 
-        <main>
-            <section>
-                <h1>Purpose?</h1>
-                <h2>This was a personal project of mines. I wanted to make a website to showcase video games and how it has had an impact on how we see gaming today.</h2>
-            </section>
+      <!-- SHOOTER / FPS -->
+      <div class="genre-group">
+        <p class="genre-label">Shooters</p>
+        <div class="games-grid">
+          <div class="game-card">
+            <p class="game-year">NOV 2003</p>
+            <p class="game-title">Call of Duty</p>
+            <p class="game-platform">PC</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">NOV 2004</p>
+            <p class="game-title">Halo 2</p>
+            <p class="game-platform">Xbox</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">JUN 2004</p>
+            <p class="game-title">Counter-Strike: Source</p>
+            <p class="game-platform">PC</p>
+            <span class="game-badge">Fan Favorite</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">MAY 2002</p>
+            <p class="game-title">Battlefield 1942</p>
+            <p class="game-platform">PC</p>
+            <span class="game-badge">Classic</span>
+          </div>
+        </div>
+      </div>
 
-<!--More information-->
+      <!-- FIGHTING -->
+      <div class="genre-group">
+        <p class="genre-label">Fighting Games</p>
+        <div class="games-grid">
+          <div class="game-card">
+            <p class="game-year">MAR 2000</p>
+            <p class="game-title">Street Fighter III: 3rd Strike</p>
+            <p class="game-platform">Arcade / Dreamcast</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">JUL 2004</p>
+            <p class="game-title">Street Fighter Anniversary Collection</p>
+            <p class="game-platform">PS2 / Xbox</p>
+            <span class="game-badge">Fan Favorite</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">DEC 2001</p>
+            <p class="game-title">Tekken 4</p>
+            <p class="game-platform">Arcade / PS2</p>
+            <span class="game-badge">Classic</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">FEB 2005</p>
+            <p class="game-title">Tekken 5</p>
+            <p class="game-platform">Arcade / PS2</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">NOV 2002</p>
+            <p class="game-title">Mortal Kombat: Deadly Alliance</p>
+            <p class="game-platform">Multi-platform</p>
+            <span class="game-badge">Classic</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">SEP 2004</p>
+            <p class="game-title">Mortal Kombat: Deception</p>
+            <p class="game-platform">PS2 / Xbox</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+        </div>
+      </div>
 
-<h1>More Information</h1>
+      <!-- SPORTS / OTHER -->
+      <div class="genre-group">
+        <p class="genre-label">Sports &amp; Other</p>
+        <div class="games-grid">
+          <div class="game-card">
+            <p class="game-year">AUG 2001</p>
+            <p class="game-title">Tony Hawk's Pro Skater 3</p>
+            <p class="game-platform">Multi-platform</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">NOV 2000</p>
+            <p class="game-title">The Sims</p>
+            <p class="game-platform">PC</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">SEP 2001</p>
+            <p class="game-title">Super Smash Bros. Melee</p>
+            <p class="game-platform">GameCube</p>
+            <span class="game-badge legendary">★ Legendary</span>
+          </div>
+          <div class="game-card">
+            <p class="game-year">NOV 2004</p>
+            <p class="game-title">Need for Speed: Underground 2</p>
+            <p class="game-platform">Multi-platform</p>
+            <span class="game-badge">Fan Favorite</span>
+          </div>
+        </div>
+      </div>
 
-<ul>
-    <li><h3 style="color:Tomato;">Contact</h3></li>
-    <li><h3 style="color:Tomato;">Media</h3></li>
-    <li><a href="https://en.wikipedia.org/wiki/History_of_video_games"<li><h3 style="color:Tomato;">Extra Stuff</h3></li>
-</ul>
+    </div>
+  </section>
 
-<p style="Background Image: url ('raymond-yeung.jpg');">
+  <!-- LINKS -->
+  <section class="links-section">
+    <div class="container">
+      <p class="section-label">// explore more</p>
+      <h2 class="section-title">MORE INFORMATION</h2>
+      <div class="links-grid">
+        <a href="mailto:youremail@example.com" class="link-card">
+          <div class="link-card-icon">✉️</div>
+          <p class="link-card-title">CONTACT</p>
+          <p class="link-card-desc">Have a suggestion or want to contribute to the archive? Reach out.</p>
+        </a>
+        <a href="#" class="link-card">
+          <div class="link-card-icon">🎮</div>
+          <p class="link-card-title">MEDIA</p>
+          <p class="link-card-desc">Screenshots, artwork, and gallery content from gaming's greatest moments.</p>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/History_of_video_games" target="_blank" class="link-card">
+          <div class="link-card-icon">📖</div>
+          <p class="link-card-title">EXTRA STUFF</p>
+          <p class="link-card-desc">Further reading on the full history of video games via Wikipedia.</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-</main>
+  <div class="pixel-divider"></div>
 
+  <!-- FOOTER -->
+  <footer>
+    <span>THE ARCHIVE: VIDEO GAMES</span> &nbsp;|&nbsp; A personal project &nbsp;|&nbsp; Built with love for gaming
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+<div class="pacman-border">
+  <div class="pacman"></div>
+  <div class="ghost">👻</div>
+<div class="pacman-border">
+  <div class="pacman"></div>
+  <div class="ghost"></div>
+
+  <div class="pacman bottom"></div>
+  <div class="ghost bottom"></div>
+</div>
